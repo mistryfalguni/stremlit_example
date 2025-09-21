@@ -65,6 +65,7 @@ def calculate_result():
        # response = requests.get(endpoint, params={"a": first_num, "b": second_num})
         response = requests.post(endpoint, params={"a": first_num, "b": second_num})
 
+        
         # Check if the request was successful
         if response.status_code == 200:
             result = response.json()
